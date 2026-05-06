@@ -5,6 +5,7 @@ android {
     compileSdk = rootProject.ext.compileSdkVersion
     defaultConfig {
         applicationId "io.capawesome.oauthdemo.app"
+        manifestPlaceholders = [appAuthRedirectScheme: "io.capawesome.oauthdemo.app"]
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

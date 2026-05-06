@@ -11,12 +11,15 @@
   <body>
     <ion-app>
       <ion-router>
-        <ion-route url="/" component="home-page"></ion-route>
+        <ion-route url="/" component="auth-page"></ion-route>
+        <ion-route url="/auth" component="auth-page"></ion-route>
+        <ion-route url="/profile" component="profile-page"></ion-route>
       </ion-router>
       <ion-router-outlet></ion-router-outlet>
     </ion-app>
     <script type="module">
       import './src/pages/HomePage.js';
+      import './src/pages/ProfilePage.js';
     </script>
 
     <script type="module" src="/src/main.js"></script>
